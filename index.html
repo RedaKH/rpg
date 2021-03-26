@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body class="home">
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 50) {
+            $('nav').css('background','black');
+            } else {
+            $('nav').css('background','transparent');
+            }
+            });
+
+            // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("nav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("nav")
+  } else {
+    navbar.classList.remove("nav");
+  }
+}
+    </script>
+    <!-- le menu -->
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rpg.html">Mes Rpg Favoris </a></li>
+
+        </ul>
+
+    </nav>
+    <header style="background-image: url('img/dot.jpg'); transition-timing-function : ease-in">
+       
+
+
+        <section class="infos">
+            <h1>Welcome</h1>
+            <p>Tu veux en apprendre plus sur les rpgs
+            alors soit le bienvenue </p>
+            <a href="rpg.html">Explore</a>
+    
+    
+        </section>
+        
+
+    </header>
+    
+    
+    
+<main class="home-main">
+    <!-- texte -->
+    <div class="sec sec1">
+        <section class="sec-in">
+            <h2>Hironobu Sakaguchi</h2>
+            <p> Il a révolutionné le J-RPG grâce à sa saga qui est Final Fantasy. A chaque épisode de Final Fantasy il a su se renouveler grâce 
+                au scénario et sa prise de risque en terme de gameplay. Il est également producteur de Chrono Trigger sur Super Nintendo qui est mon
+            rpg favori.   </p>
+
+        </section>
+        
+        <section class="sec-in">
+            <h2> Yoshinori Kitase </h2>
+            <p> Il est connu pour être le producteur de Final Fantasy 7  et celui du remake de Final Fantasy 7. 
+                Il est également co-scénariste et co-producteur de Chrono Trigger. Grâce à sa patte il a pu faire des chef d'oeuvres comme
+            Final Fantasy 7 et 10 mais également Final Fantasy 6 et des premiers Kingdom Hearts.   </p>
+        </section>
+        <section class="sec-in">
+            <h2>Naoki Yoshida </h2>
+            <p> Il est le producteur de Final Fantasy 14 et Final Fantasy 16. Il a sauvé Final Fantasy 14 des abysses car la première version du jeu
+                était catastrophique. Il a "reboot" le jeu à partir de la version 2.0. Maintenant c'est devenu le 3ème MMO le plus vendu et il a créer 
+                un background très intéressant avec de la géopolitique également un scénario qui est excellent. 
+            </p>
+
+        </section>
+        <section class="sec-in">
+            <h2>Shigesato Itoi</h2>
+            <p>Il est connu pour être le créateur de la saga Earthbound. Une série de RPG dans Une
+                amérique contemporaine. On retrouve des references à des musiciens comme Les Beatles ou à des personnages connues comme Al Capone l'histoire
+                des Earthbound sont impactants émotionnellement. L'ambiance de ces jeux sont excellent. 
+                
+
+            </p>
+
+        </section>
+        <section class="sec-in">
+            <h2>Tetsuya Nomura</h2>
+            <p> Il est le créateur de Kingdom Hearts et de The World Ends With You. Il commenca sa carrière sur FF 4 en tant 
+                que debugger ensuite il fera le chara designer des ennemis dans FF 5. Il sera galement l'un des chara designer de FF 6 et plus tard
+                chara designer principal sur le 7,8,10,10-2,13,15,Type-0 et FF7R il était également map designer sur Chrono Trigger. Il sera également
+                chara designer sur Xenoblade Chronicles 2. Ce que j'aime chez Nomura c'est le fait qu'il crée un lore tellement intéressant et intriguant
+                dans ses jeux comme Kingdom Hearts ou la compilation Final Fantasy 7 qu'on peut analyser et faire des théories comme pour Hideo Kojima
+                dans la saga Metal Gear Solid.
+            
+
+            </p>
+
+        </section>
+       
+        <section class="sec-in">
+            <h2>Yuji Horii </h2>
+            <p> Le créateur du J-Rpg himself il a crée la licence Dragon Quest en s'inspirant de Wizardry un rpg occidental à la première personne.
+                et Dragon Quest est la licence la plus vendue au Japon. Malgré qu'il soit très classique dans son gameplay. Il reste simple et efficace
+                
+            </p>
+
+        </section>
+        
+       
+
+    </div>
+    <!-- images -->
+    <div class="sec sec2">
+        <section class="sec-in">
+            <div class="pic">
+            <img src="img-producer/unnamed.jpg">
+
+            </div>
+            <div class="pic">
+                <img src="img-producer/Kitase.jpg">
+
+
+            </div>
+    
+                <div class="pic">
+                    <img src="img-producer/yoshida.jpg">
+        
+                    </div>
+
+                    <div class="pic">
+                        <img src="img-producer/itoi.png">
+                    </div>
+
+                    <div class="pic">
+                        <img src="img-producer/nomura.png">
+                    </div>
+
+                    <div class="pic">
+                        <img src="img-producer/horii.jpg">
+                    </div>
+        </section>
+    </div>
+    
+
+</main>
+</body>
+</html>
